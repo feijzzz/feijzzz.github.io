@@ -1,0 +1,90 @@
+body {
+  background-color: #e6f2ff;
+  font-family: 'Open Sans', 'Helvetica', san-serif;
+}
+
+h1   {
+  font-family: 'Baloo Bhai', 'Helvetica', san-serif;
+}
+
+p    {
+  color: 696969;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+.img-hover:hover {
+  opacity: 0.8;
+}
+
+.background-image {
+  background-image: url("../img/img1-landscape.jpg");
+  height: 50%;
+}
+
+h1 { 
+  text-align: center;
+}
+
+h1 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+h2 {
+  font-family: 'Yatra One', 'Helvetica', san-serif;
+}
+
+.img-portfolio {
+  margin-bottom: 30px;
+}
+
+.img-hover:hover {
+  opacity: 0.8;
+}
+
+.panel-heading {
+  background-color: #cce5ff;
+}
+
+.panel-default,
+.panel {
+  background-color: #e6f2ff;
+  outline-color:  #cce5ff;
+}
+
+.btn {
+  background-color: #b3d9ff;
+}
+
+
+/* Home Page Carousel */
+header.carousel {
+  height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+  height: 100%;
+}
+
+header.carousel .fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-fluid {
+  display.flex;
+}
