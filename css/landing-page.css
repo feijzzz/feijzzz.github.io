@@ -26,8 +26,16 @@ h6 {
 }
 
 .lead {
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 400;
+}
+
+.software {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #595959;
+
 }
 
 .intro-header {
@@ -120,6 +128,7 @@ h6 {
 
 .section-heading {
     margin-bottom: 30px;
+    font-size: 3rem;
 }
 
 .section-heading-spacer {
@@ -128,10 +137,11 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
+
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/footer.jpg) no-repeat center center;
     background-size: cover;
 }
 
