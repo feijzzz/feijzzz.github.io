@@ -50,6 +50,10 @@
     border-radius: 2px;
 }
 
+.img__border {
+    border: 1px solid #ddd;
+}
+
 .content-section--item__postname {
     margin-bottom: 23px;
     display: none;
