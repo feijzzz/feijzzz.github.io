@@ -103,8 +103,8 @@ h6 {
 }
 
 .intro-message__logo {
-    height: 100x;
-    width: 100px;
+    width: 120px;
+    height: auto;
 }
 
 .intro-message__title {
@@ -161,6 +161,10 @@ div.dropdown-header {
         font-size: 3em;
     }
 
+    .intro-message__logo {
+        width: 100px;
+    }
+
     ul.intro-social-buttons > li {
         display: block;
         margin-bottom: 20px;
@@ -172,7 +176,15 @@ div.dropdown-header {
     }
 
     .intro-divider {
-        width: 100%;
+        /* width: 100%; */
+    }
+
+    div.dropdown-header {
+        margin-left: -25px;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 475px;
     }
 }
 

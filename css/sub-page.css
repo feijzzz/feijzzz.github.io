@@ -31,13 +31,8 @@
     color: #333;
 }
 
-.content-section--item:hover .content-section--item__postname {
-    display: block;
-}
-
 .content-section--item:hover .content-section--item__img > img {
     opacity: 1;
-    margin-bottom: 0px;
 }
 
 .content-section--item__img > img {
@@ -53,7 +48,7 @@
 
 .content-section--item__postname {
     margin-bottom: 23px;
-    display: none;
+    /* display: none; */
     text-transform: capitalize;
     font-size: 16px;
 }
