@@ -16,10 +16,13 @@
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/sub-page.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +46,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html">Feijie Zhou</a>
+                <a class="navbar-brand topnav" href="index.html">
+                    <img class="navbar-logo" src="img/logo/personal-logo-1.svg">
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,9 +58,11 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                         <li class="dropdown-header">Photography</li>
-                         <li><a href="photography1.html">Shop Window I</a></li>
+                      <ul class="dropdown-menu">                    
+                        <li><a href="photography.html">
+                                <div class="dropdown-header">Photography</div></a>
+                        </li>
+                        <li><a href="photography1.html">Shop Window I</a></li>
                          <li><a href="photography2.html">Shop Window II</a></li>
                          <li><a href="panoramic.html">Panoramic</a></li>
                          <li><a href="#">Reflection As Painting</a></li>
@@ -79,95 +86,145 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
+    <a  name="services"></a>
+    
+    <div class="content-section-nav"></div>
 
     <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-10 col-sm-12">
-                    <h2 class="section-heading"> </h2>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    <div class="content-section-a">
-
         <div class="container">
             <div class="row">
-                <div class="col-xs-push-4  col-xs-6 col-lg-5 col-lg-offset-1 ">
-                    <div class="clearfix"></div>
-                    <h2> Feijie Zhou | 周非捷 </h2>
-                    <h2 class="lead"> Nickname: "Fay" | Jenny </h2>
-                    <h3 class="lead"> Undergraduate at Northeastern University <br> 
-                        Major: Computer Science and Interactive Media <br> 
-                        Minor: Photography<br> </h3>
-                    <h3 class="lead"> Hometown: Shanghai, China <br> Lived in: Accra, Ghana </h3>
-                </div>
-                <div class="col-xs-pull-6  col-xs-4 col-lg-4">
-                    <img class="img-responsive img-portrait" src="img/about/feijiezhou-sm.jpg" alt="">
+                <div class="col-xs-12 about--div about__first">
+                    <div class="about__logo"> 
+                        <img src="img/logo/personal-logo-chinese-ver.svg">
+                    </div>
+                    <div class="about__desc_right">
+                        <p>Recently completed my Bachelor's degree of <b>Computer Science and Interactive Media</b> at <b>Northeastern University</b></p>
+                        <p>I love exploring the world and plans to move to New York someday</p>
+                    </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xs-6 col-lg-5 ">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading"> </h2>
-                    <p class="lead"> </p>
-                </div>
-                <div class="col-xs-6 col-lg-5 col-lg-offset-2">
-                    <img class="img-responsive" src="" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
     </div>
     <!-- /.content-section-b -->
 
+    <div class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 about--div">
+                    <div class="about__header name">
+                        <div class="about__header_bold">Feijie (Jenny) Zhou | 周非捷 </div>
+                        <p>all you need to know about me</p>
+                    </div>
+                    <div class="about__desc">
+                        <div class="desc--icon">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <div class="desc--icon__br"></div>
+                        </div>
+                        <div class="desc__br"></div>
+                        <p>Originally from Shanghai, China, also lived in Accra, Ghana for 10 years</p> 
+                        <p>Came to the Boston to pursue my bachelor's degree and career, possible New York</p>
+                    </div>
+                    <div class="about__desc">
+                        <div class="desc--icon">
+                                <i class="fa fa-paint-brush fa-2x"></i>
+                                <div class="desc--icon__br"></div>
+                            </div>
+                        <p>Find the most interest in front-end Development, 
+                            where I get to combine my technical skills with my passion for art</p>
+                        <p>With one step further, I found the fun of user experience in design and research</p>
+                    </div>
+
+                    <div class="about__desc">
+                        <div class="desc--icon">
+                            <i class="fa fa-gear fa-2x"></i>
+                            <div class="desc--icon__br"></div>
+                        </div>
+                        <p>Not limited to front-end, wanting to grow into a full stack developer</p>
+                        <p>Co-oped in Boston and San Francisco, next city is New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
     <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 about--div">
+                    <div class="about__header">
+                        <div class="about__header_bold"> Skills </div>
+                        <p>Comfortable with , but not limited to the following</p>
+                    </div>
+                    <div class="about__desc">
+                        <ul class="skills">
+                            <li class="skills__header">Design</li>
+                            <li class="skills__br"></li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Indesign</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Sketch</li>
+                            <li>Balsamiq</li>
+                            <li>Invision</li>
+                        </ul>
+                    </div>
+                    <div class="about__desc">
+                        <ul class="skills">
+                            <li class="skills__header">Code</li>
+                            <li class="skills__br"></li>
+                            <li>HTML + CSS/Sass/Less</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>node/React/Vue</li>
+                            <li>Ruby on Rails</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                    <div class="about__desc">
+                        <ul class="skills">
+                            <li class="skills__header">More</li>
+                            <li class="skills__br"></li>
+                            <li>Git</li>
+                            <li>Jira/Pivotal Tracker</li>
+                            <li>Trello</li>
+                            <li>Bootstrap</li>
+                            <li>Microsoft Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
 
 	<a  name="contact"></a>
     <div class="banner">
-
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-6">
-                    <h2>Explore more about Feijie Zhou:</h2>
+                <div class="col-lg-7">
+                    <div class="banner__title">
+                        Want to know more about Feijie (Jenny) Zhou? • . •  
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="https://linkedin.com/in/feijzzz" target="_blank" class="btn btn-custom btn-md"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="https://github.com/feijzzz" target="_blank" class="btn btn-custom btn-md"><i class="fa fa-github fa-fw"></i> <span class="network-name">Git</span></a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="https://instagram.com/feijzzz" target="_blank" class="btn btn-custom btn-md"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Ins</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.banner -->
 

@@ -6,20 +6,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Online Portfolio">
+    <meta name="author" content="Feijie Zhou">
 
-    <title>Feijie Zhou</title>
+    <title>ZFJ's Portfolio</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet" >
+    <link href="css/sub-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,10 +30,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
+    <!-- <div id="nav-placeholder"></div> -->
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -43,7 +47,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Feijie Zhou</a>
+                <a class="navbar-brand topnav" href="index.html">
+                    <img class="navbar-logo" src="img/logo/personal-logo-1.svg">
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,22 +59,24 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                         <li class="dropdown-header">Photography</li>
-                         <li><a href="photography1.html">Shop Window I</a></li>
-                         <li><a href="photography2.html">Shop Window II</a></li>
-                         <li><a href="panoramic.html">Panoramic</a></li>
-                         <li><a href="#">Reflection As Painting</a></li>
-                         <li role="separator" class="divider"></li>
-                         <li class="dropdown-header">Graphic Design</li>
-                         <li><a href="illustrator.html">Illustrator</a></li>
-                         <li><a href="photoshop.html">Photoshop</a></li>
-                         <li role="separator" class="divider"></li>
-                         <li class="dropdown-header">Other Projects</li>
-                         <li><a href="#">Cinpota</a></li>
-                         <li><a href="housemodel.html">House Model</a></li>
-                         <li><a href="neuHockey.html">NEU Hockey Team</a></li>
-                      </ul>
+                        <ul class="dropdown-menu">
+                            <li><a href="photography.html">
+                                <div class="dropdown-header">Photography</div></a>
+                            </li>
+                            <li><a href="photography1.html">Shop Window I</a></li>
+                            <li><a href="photography2.html">Shop Window II</a></li>
+                            <li><a href="panoramic.html">Panoramic</a></li>
+                            <!-- <li><a href="#">Reflection As Painting</a></li> -->
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Graphic Design</li>
+                            <li><a href="illustrator.html">Illustrator</a></li>
+                            <li><a href="photoshop.html">Photoshop</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Other Projects</li>
+                            <li><a href="#">Cinpota</a></li>
+                            <li><a href="housemodel.html">House Model</a></li>
+                            <li><a href="neuHockey.html">NEU Hockey Team</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -86,9 +94,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Feijie Zhou</h1>
-                        <h3>An Online Portfolio of Feijie Zhou</h3>
-                        <hr class="intro-divider">
+                        <div >
+                            <img class="intro-message__logo" src="img/logo/personal-logo-chinese-ver-white.svg">
+                            <div class="intro-message__desc">
+                                <p>An online portfolio of Feijie (Jenny) Zhou</p>
+                            </div>
+                            <hr class="intro-divider">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,9 +113,67 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
-    <div class="content-section-a">
+    <a  name="services"></a>
+    
+      <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 content-section--div">
+                    <div class="content-section--item">
+                        <div class="content-section--item__prename">
+                            Photography
+                        </div>
+                        <div class="prename__br"></div>
+                        <a href="photography.html">
+                            <div class="content-section--item__img">
+                                <img class="img-responsive" src="img/photography1/001.jpg">
+                            </div>
+                        </a>
+                    </div>
 
+                    <div class="content-section--item">
+                        <div class="content-section--item__prename">
+                            Design
+                        </div>
+                        <div class="prename__br"></div>
+                        <a href="illustrator.html">
+                            <div class="content-section--item__img">
+                                <img class="img-responsive img__border" src="img/design/minions-cover-white.jpg">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="content-section--item">
+                        <div class="content-section--item__prename">
+                            Code
+                        </div>
+                        <div class="prename__br"></div>
+                        <a href="#">
+                            <div class="content-section--item__img">
+                                <img class="img-responsive" src="img/cinpota.jpg">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="content-section--item">
+                        <div class="content-section--item__prename">
+                            More
+                        </div>
+                        <div class="prename__br"></div>
+                        <a href="housemodel.html">
+                            <div class="content-section--item__img">
+                                <img class="img-responsive" src="img/sketchup.jpg">
+                            </div>
+                        </a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/.container -->
+    </div>
+    <!-- /.content-section-a-->
+
+    <!-- <div class="content-section-a">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
@@ -117,15 +187,12 @@
             </div>
 
         </div>
-        <!-- /.container -->
-
-    </div>
+        #/.container
+    </div> -->
     <!-- /.content-section-a -->
 
-    <div class="content-section-b">
-
+    <!-- <div class="content-section-b">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <div class="clearfix"></div>
@@ -139,15 +206,12 @@
             </div>
 
         </div>
-        <!-- /.container -->
-
-    </div>
+        #/.container
+    </div> -->
     <!-- /.content-section-b -->
 
-    <div class="content-section-a">
-
+    <!-- <div class="content-section-a">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <div class="clearfix"></div>
@@ -158,48 +222,54 @@
                     <img class="img-responsive" src="img/cinpota.jpg" alt="">
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
-    </div>
+        #/.container
+    </div>-->
     <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
     <div class="banner">
-
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-7">
-                    <h2>Explore more about Feijie Zhou:</h2>
+                    <div class="banner__title">
+                        Want to know more about Feijie (Jenny) Zhou? • . •  
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://instagram.com/feijzzz" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                            <a href="https://linkedin.com/in/feijzzz" target="_blank" class="btn btn-custom btn-md"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/feijzzz" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="https://github.com/feijzzz" target="_blank" class="btn btn-custom btn-md"><i class="fa fa-github fa-fw"></i> <span class="network-name">Git</span></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/feijzzz" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="https://instagram.com/feijzzz" target="_blank" class="btn btn-custom btn-md"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Ins</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.banner -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
+    
+    <script>
+        // $(function(){
+        //     $("#nav-placeholder").load("nav.html");
+        // });
+
+        // $.get("nav.html", function(data){
+        //     $("#nav-placeholder").replaceWith(data);
+        // });
+    </script>
 
 </body>
 
