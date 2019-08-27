@@ -41,17 +41,21 @@
 }
 
 /* Name section */
-.about__name {
+.about__header {
     width: 100%;
-    padding-bottom: 60px; 
+    padding-bottom: 20px; 
+}
+
+.about__header.name {
+    padding-bottom: 60px;
     text-align: center;
 }
 
-.about__name > p {
+.about__header > p {
     color: #777;
 }
 
-.myname {
+.about__header_bold {
     font-size: 20px;
     padding-bottom: 10px;
 }
@@ -113,6 +117,11 @@
 
     .about__desc_right {
         width: 55%;
+    }
+
+    .about__header {
+        text-align: center;
+        padding-bottom: 50px;
     }
 }
 
