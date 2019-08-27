@@ -37,6 +37,7 @@
     margin-bottom: 15px;
     display: none;
     text-transform: capitalize;
+    font-size: 16px;
 }
 
 
@@ -61,7 +62,7 @@
 
 @media(min-width:992px) {
     .division--header__title {
-        font-size: 22px;
+        font-size: 24px;
     }
     
     .division--header__desc {
